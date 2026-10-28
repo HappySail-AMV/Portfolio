@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="haut-header">
+            <img src="pp.png" alt="Logo du site">
+            <h1>Portfolio de Bouette Marc</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">A propos</a></li>
+                <li><a href="activites.html">Mes activités</a></li>
+                <li class="menu-deroulant">
+                    <a href="#">Médias</a>
+                    <ul class="sous-menu">
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="videos.html">Vidéos</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="conteneur-principal">
+        <h2>Me contacter</h2>
+
+        <form action="contact.php" method="post">
+            <div class="champ-formulaire">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+
+            <div class="champ-formulaire">
+                <label for="email">Adresse de courriel :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="champ-formulaire">
+                <label for="tel">Numéro de téléphone :</label>
+                <input type="tel" id="tel" name="tel">
+            </div>
+
+            <div class="champ-formulaire">
+                <label for="motif">Motif de contact :</label>
+                <select id="motif" name="motif">
+                    <option value="">-- Choisissez un motif --</option>
+                    <option value="information">Demande d'information</option>
+                    <option value="stage">Proposition de stage</option>
+                    <option value="projet">Collaboration sur un projet</option>
+                    <option value="autre">Autre</option>
+                </select>
+            </div>
+
+            <div class="champ-formulaire">
+                <label for="creneau">Créneau horaire (jour et heure) :</label>
+                <input type="datetime-local" id="creneau" name="creneau">
+            </div>
+
+            <div class="champ-formulaire">
+                <label for="premiere_oui">Est-ce votre première demande ?</label>
+                <input type="radio" id="premiere_oui" name="premiere_demande" value="Oui">
+                <label for="premiere_oui" class="label-inline">Oui</label>
+
+                <input type="radio" id="premiere_non" name="premiere_demande" value="Non">
+                <label for="premiere_non" class="label-inline">Non</label>
+            </div>
+
+            <div class="champ-formulaire">
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <div class="boutons-formulaire">
+                <button type="submit">Envoyer</button>
+                <button type="reset">Remettre à l'état initial</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>Bouette Marc - Groupe 4 - <a href="mailto:Marc.Bouette@etu.uca.fr">Marc.Bouette@etu.uca.fr</a></p>
+    </footer>
+
+</body>
+</html>

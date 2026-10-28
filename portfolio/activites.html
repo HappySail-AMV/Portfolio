@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mes activités</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="print.css" media="print">
+</head>
+<body>
+
+    <header>
+        <div class="haut-header">
+            <img src="pp.png" alt="Logo du site">
+            <h1>Portfolio de Bouette Marc</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">A propos</a></li>
+                <li><a href="activites.html">Mes activités</a></li>
+                <li class="menu-deroulant">
+                    <a href="#">Médias</a>
+                    <ul class="sous-menu">
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="videos.html">Vidéos</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="conteneur-principal">
+        <h2>Mes activités scolaires et extra-scolaires</h2>
+
+        <table>
+            <caption>Récapitulatif de mes projets et activités</caption>
+            <thead>
+                <tr>
+                    <th colspan="5">Projets scolaires et extra-scolaires</th>
+                </tr>
+                <tr>
+                    <th>Catégorie</th>
+                    <th>Nom du projet</th>
+                    <th>Description</th>
+                    <th>Période</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Scolaire</td>
+                    <td>HTML lycee</td>
+                    <td>Création d'un site en HTML/CSS</td>
+                    <td>2023-24</td>
+                </tr>
+                <tr>
+                    <td>Aquisition de données</td>
+                    <td>codage sur un kart pour afficher la vitesse</td><!-- pas ouf en vrai -->
+                    <td>2025</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Extra-scolaire</td>
+                    <td>Serveur Minecraft</td>
+                    <td>Configuration et gestion de serveurs moddés</td>
+                    <td>2025-2026</td>
+                    <td><img src="minecraft.jpg" alt="Serveur"></td>
+                </tr>
+                <tr>
+                    <td>Alarme de porte</td>
+                    <td>Création d'une alarme de porte pour frigo</td><!-- sa ma pris 2min mais trop pratique -->
+                    <td>2025</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>Bouette Marc - Groupe 4 - <a href="mailto:Marc.Bouette@etu.uca.fr">Marc.Bouette@etu.uca.fr</a></p>
+    </footer>
+
+</body>
+</html>

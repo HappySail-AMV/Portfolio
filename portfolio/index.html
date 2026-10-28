@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil - Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="haut-header">
+            <img src="pp.png" alt="Logo du site">
+            <h1>Portfolio de Bouette Marc</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">A propos</a></li>
+                <li><a href="activites.html">Mes activités</a></li>
+                <li class="menu-deroulant">
+                    <a href="#">Médias</a>
+                    <ul class="sous-menu">
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="videos.html">Vidéos</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="conteneur-principal">
+        <div class="presentation-rapide">
+            <img src="photo.jpg" alt="Ma photo">
+            <h2>Marc Bouette - Etudiant en BUT Informatique</h2>
+        </div>
+
+        <div class="bloc-accueil">
+            <div class="mes-sections">
+                <section>
+                    <h2>Présentation générale</h2>
+                    <article>
+                        <h3>Qui suis-je ?</h3>
+                        <p>Je suis actuellement étudiant en première année de BUT...</p>
+                        <a href="#suite1">Lire la suite</a>
+                        <p id="suite1" class="texte-cache">J'étudie à l'IUT d'Aubière. Vous pouvez voir le détail de mon parcours sur la page <a href="apropos.html">A propos de moi</a>.</p>
+                    </article>
+                    <article>
+                        <h3>Mes études</h3>
+                        <p>Apprentissage de la programmation et du web...</p>
+                        <a href="apropos.html">Lire la suite</a>
+                    </article>
+                </section>
+
+                <section>
+                    <h2>Aperçu de mes activités</h2>
+                    <article>
+                        <h3>Projets informatiques</h3>
+                        <p>Création de sites web et administration de serveurs...</p>
+                        <a href="activites.html">Lire la suite</a>
+                    </article>
+                    <article>
+                        <h3>Loisirs</h3>
+                        <p>Passionné de moto et de jeux vidéo en ligne...</p>
+                        <a href="activites.html">Lire la suite</a>
+                    </article>
+                </section>
+            </div>
+
+            <aside>
+                <h3>Mes liens</h3>
+                <ul>
+                    <li><a href="https://codefirst.iut.uca.fr">Mon CodeFirst</a></li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+        <p>Bouette Marc - Groupe 4 - <a href="mailto:Marc.Bouette@etu.uca.fr">Marc.Bouette@etu.uca.fr</a></p>
+    </footer>
+
+</body>
+</html>
